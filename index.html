@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蟹座の心の扉診断</title>
+  <meta name="description" content="絵本『星の学園リリス』蟹座編の世界観をもとにした、感情と心の帰る場所を見つめる診断アプリです。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <main class="app" aria-live="polite">
+      <section id="start-screen" class="screen screen-start is-active">
+        <p class="series-label">12星座シリーズ</p>
+        <div class="cover-frame">
+          <img id="cover-image" src="assets/images/cover.jpg" alt="星の学園リリス 蟹座編の表紙">
+        </div>
+        <div class="title-block">
+          <h1>蟹座の心の扉診断</h1>
+          <p class="subtitle">あなたの感情が教えてくれる<br>心の帰る場所</p>
+        </div>
+        <div class="intro-copy">
+          <p>絵本『星の学園リリス』蟹座編の世界から生まれた<br>心の診断アプリです。</p>
+          <p>感情は弱さではありません。<br>あなたが大切にしてきたものを知るための<br>やさしいサインです。</p>
+        </div>
+        <p class="credit">絵本：星の学園リリス 蟹座編<br>著：佐奈</p>
+        <button id="start-button" class="primary-button" type="button">診断をはじめる</button>
+      </section>
+
+      <section id="question-screen" class="screen" hidden>
+        <div class="question-top">
+          <p id="question-count" class="question-count">質問 1 / 10</p>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+        </div>
+        <h2 id="question-text" class="question-text"></h2>
+        <div id="choices" class="choices"></div>
+        <button id="back-button" class="ghost-button" type="button">前の質問へ戻る</button>
+      </section>
+
+      <section id="result-screen" class="screen" hidden>
+        <p class="result-label">診断結果</p>
+        <h2 id="result-title" class="result-title"></h2>
+        <p id="result-catch" class="result-catch"></p>
+
+        <div class="result-panel">
+          <h3>あなたの心の傾向</h3>
+          <p id="result-description"></p>
+        </div>
+        <div class="result-panel">
+          <h3>蟹座からのメッセージ</h3>
+          <p id="result-cancer"></p>
+        </div>
+        <div class="result-panel">
+          <h3>ムーンストーンからのメッセージ</h3>
+          <p id="result-moonstone"></p>
+        </div>
+        <div class="result-panel work-panel">
+          <h3>ミニワーク</h3>
+          <p id="result-work"></p>
+        </div>
+
+        <p class="notice">この診断は自己理解のためのものです。<br>心がつらいときは、信頼できる人や専門家に相談してください。</p>
+        <button id="restart-button" class="primary-button" type="button">もう一度診断する</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 佐奈</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
